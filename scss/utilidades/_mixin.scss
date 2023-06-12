@@ -1,0 +1,25 @@
+@mixin contenedor-dos-galeria{
+    width: 70%;
+    height: 80vh;
+    padding-bottom: 3rem;
+    @include flex(space-between)
+}
+
+@mixin fotos{
+    width: 32%;
+    object-fit: cover;
+}
+
+@mixin flex ($justify-content){
+    display: flex;
+    justify-content: $justify-content;
+    margin: auto;
+}
+
+@mixin fondo-imagen($url){
+    background-image: $url;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

@@ -1,0 +1,45 @@
+/* Estilos discos */ /* Estilos discos */ /* Estilos discos */
+
+@import "utilidades/vars";
+@import "utilidades/mixin";
+
+.fondo{
+    @include fondo-imagen(url(../images/200904174834-cerati-showbiz.jpg));
+    padding-bottom: 2rem ;
+}
+
+.main-h2{
+    padding: 2rem;
+    font-size: 70px;
+    text-align: center;
+}
+
+/* Separador */
+
+.discos-div-hr-abajo-container{
+display: flex;
+justify-content: center;
+}
+
+.discos-div-hr-abajo{
+width: 40%;
+}
+
+.discos-hr-biografia-abajo{
+border:rgba(24, 24, 24, 1) solid 3px ;
+}
+
+/* clases del main discos */
+
+.main-discos{
+    width: 70%;
+    margin-top: 3rem;
+    @include flex (center);
+    flex-wrap: wrap;
+}
+
+main .main-discos iframe{
+    opacity: 93%;
+    margin: 1rem;
+}
+ 
