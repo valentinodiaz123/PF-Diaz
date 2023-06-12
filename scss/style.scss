@@ -176,7 +176,6 @@ footer{
 
 @media screen and (max-width: 1024px){
     header{
-        justify-content: center;
         flex-flow: wrap;
         margin-bottom: 10px;
         .lista-desordenada-nav{
@@ -184,8 +183,9 @@ footer{
             justify-content: center;
             flex-flow: wrap;
             margin: 15px 50px;
+            gap: 16px;
             li a{
-                font-size: 20px;
+                font-size: 17px;
             }
             nav ul {
                 padding-left: 0px
@@ -231,6 +231,9 @@ footer{
 /* media queries para celular */
 
 @media screen and (max-width: 680px){
+    header{
+        justify-content: center;
+    }
     main{
         .contenedor{
             grid-template-columns: 1fr;
