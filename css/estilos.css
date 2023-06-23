@@ -159,7 +159,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 40% 50%;
-    row-gap: 4rem;
+    row-gap: 3rem;
     column-gap: 2rem;
     margin: auto; }
   main .contenedor-grilla div img {
@@ -167,7 +167,14 @@ main {
     height: 100%;
     object-fit: cover; }
   main .imagen-uno {
-    grid-column: span 3; }
+    grid-column: span 3;
+    object-position: right top; }
+  main .imagen-dos {
+    object-position: top; }
+  main .imagen-tres {
+    object-position: left; }
+  main .imagen-cuatro {
+    object-position: top; }
   main .segundo-contenedor-gria {
     width: 70%;
     height: 80vh;
@@ -247,7 +254,6 @@ main {
     grid-template-columns: 1.3fr 1fr;
     grid-template-rows: auto;
     margin-top: 10px;
-    background-color: #181818;
     color: #cacfd5; }
   main .index-main-div-img {
     padding: 2rem; }
@@ -301,6 +307,10 @@ footer {
     height: 85vh; } }
 
 /* Media queries para pc INDEX*/
+@media screen and (max-width: 1366px) {
+  main .contenedor-grilla {
+    row-gap: 2rem; } }
+
 @media screen and (min-width: 1200px) {
   header nav ul li a {
     font-size: 30px; } }
@@ -310,6 +320,8 @@ footer {
     width: 50%; }
   main .segundo-contenedor-gria {
     display: none; }
+  main .contenedor-grilla {
+    row-gap: 4rem; }
   main .contenedor-grilla {
     grid-template-rows: 40% 40%; } }
 
@@ -324,8 +336,6 @@ footer {
       flex-flow: wrap;
       margin: 15px 50px;
       gap: 16px; }
-      header .lista-desordenada-nav li a {
-        font-size: 17px; }
       header .lista-desordenada-nav nav ul {
         padding-left: 0px; }
   main .contenedor {
@@ -352,7 +362,7 @@ footer {
     width: 100%; } }
 
 /* media queries para celular */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 800px) {
   header {
     justify-content: center; }
   main .contenedor {
@@ -373,11 +383,11 @@ footer {
     footer div ul li a img {
       width: 30%; } }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 580px) {
   header {
-    padding-bottom: 1rem; } }
-
-@media screen and (max-width: 560px) {
-  header .lista-desordenada-nav {
-    margin: 0px 0px;
-    padding: 0px; } }
+    padding-bottom: 1rem; }
+    header .lista-desordenada-nav {
+      margin: 0px 0px;
+      padding: 0px; }
+  main .contenedor-grilla {
+    column-gap: 0.5rem; } }

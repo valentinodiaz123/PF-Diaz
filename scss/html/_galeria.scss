@@ -43,7 +43,7 @@ main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 40% 50%;
-        row-gap: 4rem;
+        row-gap: 3rem;
         column-gap: 2rem;
         margin: auto;
     }
@@ -56,6 +56,16 @@ main{
     
     .imagen-uno{
         grid-column: span 3;
+        object-position: right top;
+    }
+    .imagen-dos{
+        object-position: top;
+    }
+    .imagen-tres{
+        object-position: left;
+    }
+    .imagen-cuatro{
+        object-position: top;
     }
     .segundo-contenedor-gria{
         @include contenedor-dos-galeria;
