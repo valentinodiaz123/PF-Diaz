@@ -390,5 +390,7 @@ footer {
     header .lista-desordenada-nav {
       margin: 0px 0px;
       padding: 0px; }
+      header .lista-desordenada-nav li a {
+        font-size: 18px; }
   main .contenedor-grilla {
     column-gap: 0.5rem; } }
