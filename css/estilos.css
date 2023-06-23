@@ -107,7 +107,8 @@ header .lista-desordenada-nav, footer div ul {
   width: 40%; }
 
 .discos-hr-biografia-abajo {
-  border: #181818 solid 3px; }
+  border: #181818 solid 3px;
+  margin-bottom: 4rem; }
 
 /* clases del main discos */
 .main-discos {
